@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.app {
+display: grid;
+grid-template-columns: 50px 300px auto;
+height: 100vh;
+font-family: "Roboto", sans-serif ;
+}
+
+section {
+    border: 1px solid black;
+}
+
+.side_bar {
+ background: purple;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px;
+}
+
+.side_bar_icon{
+width: 30px;
+height: 30px;
+background: black;
+}
+
+.nav_bar {
+ background: gainsboro;
+ display: grid;
+ grid-template-rows: 70px calc(100vh - 70);
+}
+
+.nav_bar_controls {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ padding: 10px;
+ gap: 10px;
+ border-bottom: 1px solid gray;
+ border-right: 1px solid gray;
+}
+
+.nav_bar_input {
+width: 110px;
+height: 30px;
+padding: 5px;
+}
+
+.nav_bar_input:focus-visible {
+ outline: none;
+}
+
+.navbar__scroll {
+
+}
+
+.navbar__month {
+
+}
+
+.navbar__month-title {
+    background: rgb(198 198 198);
+    padding: 10px 20px;
+
+    font-weight: bold;
+}
+
+.navbar__month-note {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    display: grid;
+    grid-template-columns: 70px auto;
+    border-left: 5px solid gainsboro;
+    border-right: 5px solid gainsboro;
+}
+
+.navbar__month-note_active {
+    background: white;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    display: grid;
+    grid-template-columns: 70px auto;
+    border-left: 5px solid rgb(152, 72, 152);
+    border-right: 5px solid white;
+}
+
+.navbar__month-note:hover {
+    cursor: pointer;
+    border-left: 5px solid rgb(152, 72, 152);
+}
+
+.navbar__month-note-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid gray;   
+}
+
+.navbar__month-note-date-num {
+    font-size: 24px;
+}
+
+.navbar__month-note-date-day{
+    font-size: 13px;
+}
+
+.navbar__month-note-discription {
+    font-size: 13px;
+    padding: 20px;
+
+}
