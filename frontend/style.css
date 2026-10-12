@@ -114,3 +114,35 @@ padding: 5px;
     padding: 20px;
 
 }
+
+.editor {
+display: grid;
+grid-template-rows: 70px 35px calc(100vh - 105px);
+}
+
+.editor__navbar {
+border-bottom: 1px solid gray;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 10px;
+}
+
+.editor__navbar-arrow {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid gray;
+
+}
+
+.editor__navbar-del {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid gray;
+
+}
+
